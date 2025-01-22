@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatContainer = document.querySelector('#chat')!;
 
   chatStream.onMessages = (messages) => {
-    console.log(messages);
     const chatEl = document.createElement('div');
     chatEl.innerText = `Messages received (${messages.length})`;
     chatContainer.appendChild(chatEl);;
