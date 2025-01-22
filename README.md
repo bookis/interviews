@@ -1,0 +1,8 @@
+- I have a chat log
+- More chat messages are coming in
+- I need to be able to add chats
+- Chats come with an id
+- Chats optionally come with a thread id
+- Chats have an author
+- Chats have a body
+- Chats have a timestamp
