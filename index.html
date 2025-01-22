@@ -2,11 +2,41 @@
 <html>
 <head>
 <title>Title of the document</title>
-    <script src="/main.js"></script>
+    <script src="/dist/main.js"></script>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #container {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+    }
+    #chat {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      border: 1px solid gray;
+      width: 100%;
+      overflow: scroll;
+    }
+
+</style>
 </head>
 
 <body>
+  <div id="container">
     <div id="chat"></div>
+    <form id="message-form">
+      <input type="text" />
+      <button>Send</button>
+    </form>
+  </div>
 </body>
 
 </html>

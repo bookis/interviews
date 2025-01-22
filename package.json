@@ -2,8 +2,13 @@
   "name": "chat_interview",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build:watch": "bun build ./src/main.ts --target bun --watch --outfile dist/main.js",
+    "start": "http-server ."
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "http-server": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
